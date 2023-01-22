@@ -5,25 +5,20 @@
   font-weight: 700;
 }
 .nameGood {
+  composes: name;
   font-weight: 500;
-  margin-left: 20px;
-  font-size: 20px;
+
   color: green;
 }
 .nameNeutral {
-  font-weight: 500;
-  margin-left: 20px;
-  font-size: 20px;
+  composes: nameGood;
   color: orange;
 }
 .nameBad {
-  margin-left: 20px;
-  font-size: 20px;
+  composes: nameGood;
   color: red;
 }
 .namePositive {
-  margin-left: 20px;
-  font-size: 20px;
+  composes: name;
   color: cornflowerblue;
-  font-weight: 700;
 }

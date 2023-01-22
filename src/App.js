@@ -1,9 +1,9 @@
-import React from "react";
+import { Component } from "react";
 import Statistics from "./components/Statistics";
 import FeedbackOptions from "./components/FeedbackOptions";
 import Section from "./components/Section";
 
-class App extends React.Component {
+class App extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -11,8 +11,9 @@ class App extends React.Component {
   };
 
   handleIncrement = (event) => {
+    const value = event.target.value;
     this.setState((prevState) => ({
-      [event.target.value]: prevState[event.target.value] + 1,
+      [value]: prevState[value] + 1,
     }));
   };
 

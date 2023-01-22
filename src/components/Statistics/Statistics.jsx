@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import Notification from "../Notification";
-import s from "../Statistics/Statistics.module.css";
+import PropTypes from 'prop-types';
+import Notification from '../Notification';
+import styles from '../Statistics/Statistics.module.css';
 export default function Statistics({
   good,
   neutral,
@@ -12,11 +12,11 @@ export default function Statistics({
     <>
       {total > 0 ? (
         <>
-          <span className={s.nameGood}>Good: {good}</span>
-          <span className={s.nameNeutral}>Neutral: {neutral}</span>
-          <span className={s.nameBad}>Bad: {bad}</span>
-          <span className={s.name}>Total: {total}</span>
-          <span className={s.namePositive}>
+          <span className={styles.nameGood}>Good: {good}</span>
+          <span className={styles.nameNeutral}>Neutral: {neutral}</span>
+          <span className={styles.nameBad}>Bad: {bad}</span>
+          <span className={styles.name}>Total: {total}</span>
+          <span className={styles.namePositive}>
             PositivePercentage: {positivePercentage}%
           </span>
         </>
