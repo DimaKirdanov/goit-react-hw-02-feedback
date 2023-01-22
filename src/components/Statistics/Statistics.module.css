@@ -1,0 +1,29 @@
+.name {
+  margin-left: 20px;
+  font-size: 20px;
+  color: blue;
+  font-weight: 700;
+}
+.nameGood {
+  font-weight: 500;
+  margin-left: 20px;
+  font-size: 20px;
+  color: green;
+}
+.nameNeutral {
+  font-weight: 500;
+  margin-left: 20px;
+  font-size: 20px;
+  color: orange;
+}
+.nameBad {
+  margin-left: 20px;
+  font-size: 20px;
+  color: red;
+}
+.namePositive {
+  margin-left: 20px;
+  font-size: 20px;
+  color: cornflowerblue;
+  font-weight: 700;
+}
